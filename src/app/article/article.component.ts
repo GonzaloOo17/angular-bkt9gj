@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import{ ARTICLES } from '../mock-articles';
+import{ Article } from '../article';
 
 @Component({
   selector: 'app-article',
@@ -7,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleComponent implements OnInit {
 
-  constructor() { }
+  article : any= {};
+
+  constructor(private activatedRoute: ActivatedRoute) { 
+
+  this.activatedRoute.params.subscribe(params=>{
+    console.log(ARTICLES[params.id]);
+    this.article=ARTICLES[params.id];
+    })
+  }
+   
 
   ngOnInit() {
   }
