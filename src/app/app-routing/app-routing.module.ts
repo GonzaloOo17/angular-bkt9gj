@@ -3,12 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { ArticleComponent } from '../article/article.component';
 import { AppComponent } from '../app.component';
 import { CommonModule } from '@angular/common';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 
 
 const routes: Routes = [
   { path: 'article', component: ArticleComponent },
-  { path: 'dashboard', component: AppComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   
 ];

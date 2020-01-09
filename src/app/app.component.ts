@@ -10,7 +10,7 @@ import { ARTICLES } from './mock-articles';
 export class AppComponent {
   name = 'Angular';
 
-  articles = ARTICLES;
+  
 
   
 

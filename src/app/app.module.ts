@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HeaderComponent } from './common-files/header/header.component';
 import { ArticleComponent } from './article/article.component';
-import { DashboardComponent } from './app-routing/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
